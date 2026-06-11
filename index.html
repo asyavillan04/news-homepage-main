@@ -7,27 +7,48 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(49, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Home
+  <header> 
+      Home
   New
   Popular
   Trending
-  Categories
+  Categories 
+
+  </header>
+
+  <main>
+
+<!-------------------------------------THE MAIN PICTURE------------------------------------->
+
+  <picture>
+    <source media="(max-width: 768px)" srcset="assets/images/image-web-3-mobile.jpg">
+    <source media="(min-width: 769px)" srcset="assets/images/image-web-3-desktop.jpg">
+    <img src="desktop.jpg" alt="Описание">
+  </picture>
+
+  <!--                                   The article itself                                -->
+  <div class="article"> 
 
   The Bright Future of Web 3.0?
 
   We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
   But is it really fulfilling its promise?
 
-  Read more
+  <a href="#">Read more</a>
+
+  </div>
+
+
+<!--                                     New articles                                     -->
+                                     
+  <aside class="sidebar" aria-label="New articles">
 
   New 
 
@@ -40,6 +61,12 @@
   Is VC Funding Drying Up?
   Private funding by VC firms is down 50% YOY. We take a look at what that means.
 
+  </aside>
+
+
+<!--                                     Feed                                              -->
+
+<aside class="bottom-bar" aria-label="Other articles">
   01
   Reviving Retro PCs
   What happens when old PCs are given modern upgrades?
@@ -52,6 +79,10 @@
   The Growth of Gaming
   How the pandemic has sparked fresh opportunities.
   
+</aside>
+
+</main>
+
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
