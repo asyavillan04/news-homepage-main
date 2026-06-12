@@ -37,7 +37,7 @@
     font-style: extrabold;
 }
 
-/*-------------------------------globals*/
+/*---------------------------------------------------GLOBALS*/
 * {
     margin: 0;
     padding: 0;
@@ -79,6 +79,16 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
 /*----------------------------------header*/
 
 header {
@@ -271,6 +281,10 @@ footer {
 
     body {
         padding: 3vh 4vw;
+    }
+
+    body.menu-open {
+        overflow: hidden;
     }
 
      .menu-toggle {
